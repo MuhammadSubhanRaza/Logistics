@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap');
+
+:root{
+    --primary :#001fab;
+    --secondary : #3358ff;
+    --dark:#003049;
+    --base:#f6f7fb;
+    --primary-accent:#ffcfd8;
+    --secondary-accent:#fad1ac;
+}
+
+body
+{
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: var(--dark);
+}
+
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,
+.col-md-5,.col-md-6,.col-md-7,.col-md-8,
+.col-md-9,.col-md-10,.col-md-11,.col-md-12
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.main-body-sec
+{
+    display: flex;
+}
+
+/* ------------------ SCROLL BAR --------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(196, 196, 196); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark); 
+  }
+
+  
+
+
+/* --------------------- LOADER -------------------------- */
+
+.main-loader-cont{
+    /* background-color: rgba(0, 48, 73,0.4); */
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1000;
+}
+.ldr-cnt-inner{
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ldr-cnt-inner p{
+    color: white;
+    margin-top: 10xp;
+}
+
+.bars {
+    width: 64.8px;
+    height: 57.6px;
+    --c: linear-gradient(#ff9500 calc(50% - 14.4px),#0000 0 calc(50% + 14.4px),#ff9500  0);
+    background: var(--c) 0%   100%,
+         var(--c) 50%  100%,
+         var(--c) 100% 100%;
+    background-size: 13px calc(200% + 28.8px);
+    background-repeat: no-repeat;
+    animation: bars-th2joa 1s infinite linear;
+ }
+ 
+ @keyframes bars-th2joa {
+    33% {
+       background-position: 0% 50%,50% 100%,100% 100%;
+    }
+ 
+    50% {
+       background-position: 0%  0%,50%  50%,100% 100%;
+    }
+ 
+    66% {
+       background-position: 0%  0%,50%   0%,100%  50%;
+    }
+ 
+    100% {
+       background-position: 0%  0%,50%   0%,100%   0%;
+    }
+ }
+
+
+ /* -------------------------- Ribbon ------------------------------ */
+
+.ribbon{
+    padding: 15px 0px;
+}
+
+.brand{
+color: white;
+letter-spacing: 1px;
+font-size: 1.8rem;
+text-transform: uppercase;
+display: block;
+text-align: center;
+padding-top: 20px;
+}
+
+.brand:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.ribbon-indicator{
+    background-color: white;
+    display: flex;
+    color: var(--secondary);
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    float: right;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.ribbon-link{
+    color: white;
+}
+
+.ribbon-link-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.ribbon-link-icon{
+    color: white;
+}
+.ribbon-link-inner p{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.link-divider{
+    display: block;
+}
+
+.name-indicator{
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    background-color: var(--secondary);
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    position: relative;
+}
+.isonline-indicator{
+    padding: 3px;
+    background-color: rgb(0, 231, 0);
+    border-radius: 50%;
+    border: solid 3px white;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+
+.ribbon-nav-content{
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0,0.6) 0px 10px 10px;
+    width: 190px;
+    right: 0;
+    display: none;
+}
+
+.ribbon-nav-content::after{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 10px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: -10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.rbn-nav-cntnt-body{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.ribbon-item{
+    cursor: pointer;
+}
+
+.ribbon-item:hover .ribbon-link{
+    color: var(--secondary) !important;
+    text-decoration: none;
+}
+
+.ribbon-item:hover .ribbon-nav-content{
+    display: block;
+}
+
+
+.profile-sec{
+    padding-top: 15px;
+}
+
+.profile-sec img{
+    width: 70px;
+    height: 70px;
+}
+
+.user-name{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-weight:600;
+}
+.user-role{
+    display: block;
+    text-align: center;
+    color: rgb(150,150,150);
+    font-size: 0.9rem;
+}
+
+.profile-nav-content {
+    height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.profile-sec-nav{
+    padding: 0;
+    margin: 0;
+}
+.profile-sec-nav li{
+    display: block;
+    border-top: solid 1px rgb(247,247,247);
+}
+.profile-sec-nav li a{
+    display: block;
+    padding: 7px 10px;
+    color: black;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.profile-sec-nav li a:hover{
+    background-color: var(--primary);
+    text-decoration:none;
+    color: white;
+}
+
+
+
+.r-n-v-header{
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+}
+
+.r-n-v-header h6{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.ribbon-sub-nav{
+    padding: 0;
+    margin: 0;
+}
+.ribbon-sub-nav li{
+    display: block;
+}
+.ribbon-sub-nav li a h6{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+.ribbon-sub-nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.ribbon-sub-nav li a:hover{
+    text-decoration: none;
+    background-color: rgb(240,240,240);
+}
+.ribbon-sub-nav li a span{
+    color: rgb(190,190,190);
+    font-size: 0.8rem;
+    display: block;
+    text-align: right;
+}
+.ribbon-nav-qty{
+    color: rgb(150,150,150) !important;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .link-divider{
+        display: inline;
+    }
+    .ribbon-link-inner{
+        justify-content: left;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .ribbon-indicator
+    {
+        margin-right: 20px;
+    }
+    .brand{
+        margin-bottom: 30px;
+    }
+    .ribbon-link-logout{
+        display: none !important;
+    }
+  }
+
+
+
+  /* --------------------- MAIN NAV ----------------- */
+
+
+  .main-nav-item{
+    display: inline;
+  }
+  .main-nav-item span{
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .main-nav-item p{
+    display: inline;
+    text-transform: uppercase;
+  }
+  .navbar{
+    padding: 0px !important;
+  }
+  .vertical-divider{
+    width: 4px;
+    color: var(--dark);
+    height: 40px;
+  }
+  .nav-item{
+    border-right: solid 1px var(--dark) !important;
+  }
+  .dropdown-item{
+    font-size: 0.8rem !important;
+  }
+  .dropdown-item:hover{
+    background-color: var(--secondary) !important;
+    color: white !important;
+  }
+
+  .third-level-nav{
+    padding: 0;
+    margin: 0;
+  }
+
+  .third-level-menu-item{
+    display:block;
+    position: relative;
+    }
+
+  .third-level-menu-link{
+    background-color: white;
+    position: absolute;
+    transform: translateX(100%);
+    width: 160px;
+    box-shadow: rgba(0, 0, 0,0.6) 0px 0px 10px;
+    border-radius: 5px;
+    display: none;
+    top: 0;
+    padding: 10px 0px;
+  }
+
+  .third-level-menu-item:hover .third-level-menu-link{
+    display: block;
+  }
+
+  @media screen and (max-width: 991px) {
+  
+    .main-nav-item{
+        padding-left: 20px;
+    }
+
+    .main-nav-item span{
+        display: inline;
+        margin-right: 15px;
+    }
+
+  }
+
+
+  /* ----------------- MAIN CONTENT AREA ---------------- */
+
+
+  .main-content-area{
+    background-color: var(--base);
+    min-height: 450px;
+    margin-top: 10px;
+  }
+
+  .welcome-ribbon{
+    background-color: var(--primary);
+    color: white;
+  }
+  .welcome-ribbon h4{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 10px ;
+  }

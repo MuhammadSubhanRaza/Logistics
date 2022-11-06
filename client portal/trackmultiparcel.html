@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Logistics Portal</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main-body-sec">
+
+
+    <!-- ----------------- SIDENAV -------------- -->
+
+    <nav class="main-sidenav">
+        <div class="sidenav-header">
+            <img src="./images/logo.png" alt="">
+            <span>LOGISTICS</span>
+        </div>
+        <div class="sidenav-loginas">
+            <a href="#" class="login-comp-link">
+                <span class="login-comp-ind">
+                    B
+                    <span class="online-mark"></span>
+                </span>
+                <div class="login-comp-name">
+                    <h6>BB Collection</h6>
+                    <p>Premium User</p>
+                </div>
+            </a>
+        </div>
+        <div class="sidenav-body">
+            <ul class="main-navigation">
+                <li>
+                    <a href="Dashboard.html">
+                        <span><i class="fa fa-desktop"></i></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#sipmententry" role="button" >
+                        <span><i class="fa fa-ship"></i></span>
+                        Shipment Entry
+                        <span class="expand-icon"><i class="fa fa-angle-double-down"></i></span>
+                    </a>
+                    <div class="collapse cst-collapse" id="sipmententry">
+                        <ul>
+                            <li><a href="addnewshipment.html">Add New</a></li>
+                            <li><a href="importshipment.html">Import</a></li>
+                            <li><a href="generateparcticket.html">Generate Parcel Tickets</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#sipmentlogs" role="button" >
+                        <span><i class="fa fa-list"></i></span>
+                        Shipment Logs
+                        <span class="expand-icon"><i class="fa fa-angle-double-down"></i></span>
+                    </a>
+                    <div class="collapse cst-collapse" id="sipmentlogs">
+                        <ul>
+                            <li><a href="searchparcel.html">Search Parcel</a></li>
+                            <li><a href="trackmultiparcel.html">Track Multiple Parcels</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#activity" role="button" >
+                        <span><i class="fa fa-table"></i></span>
+                        Activity
+                        <span class="expand-icon"><i class="fa fa-angle-double-down"></i></span>
+                    </a>
+                    <div class="collapse cst-collapse" id="activity">
+                        <ul>
+                            <li><a href="dailyparcel.html">Daily Parcels</a></li>
+                            <li><a href="datewiseparcel.html">Date Wise Parcels</a></li>
+                            <li><a href="parcelsummary.html">Parcels Summary</a></li>
+                            <li><a href="exportshipment.html">Export Shipments</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="codreport.html">
+                        <span><i class="fa fa-file-pdf-o"></i></span>
+                        COD Reports
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#ordersupplies" role="button" >
+                        <span><i class="fa fa-file-text"></i></span>
+                        Order Supplies
+                        <span class="expand-icon"><i class="fa fa-angle-double-down"></i></span>
+                    </a>
+                    <div class="collapse cst-collapse" id="ordersupplies">
+                        <ul>
+                            <li><a href="flyerrequest.html">Request Flyers</a></li>
+                            <li><a href="checkflyerrequest.html">Check Flyers Status</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="returnedparcels.html">
+                        <span><i class="fa fa-arrow-circle-left"></i></span>
+                        Returned Parcels
+                    </a>
+                </li>
+                <li>
+                    <a href="newsfeed.html">
+                        <span><i class="fa fa-rss"></i></span>
+                        News Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="reportmanager.html">
+                        <span><i class="fa fa-bar-chart"></i></span>
+                        Report Manager
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa fa-sign-out"></i></span>
+                        Logout
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+
+
+    <!-- ------------ MAIN BODY CONTENT ----------- -->
+
+    <section class="main-body-content">
+         <!-- ----------------- TOP-NAV --------------------- -->
+
+        <nav class="top-nav">
+            <div class="main-content-banner">
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 col-md-0">
+                        <div class="timer-container">
+                            <span class="region-time">
+                                <img src="./images/ae.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                            <span class="region-time">
+                                <img src="./images/sa.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                            <span class="region-time">
+                                <img src="./images/qa.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                            <span class="region-time">
+                                <img src="./images/kw.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                            <span class="region-time">
+                                <img src="./images/bh.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                            <span class="region-time">
+                                <img src="./images/om.svg" alt="">
+                                1:39:56 pm
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right p-0">
+                        <h1 class="site-title-smallvp text-left">LOGISTICS</h1>
+                        <div class="text-right d-inline">
+                            <span class="top-nav-btn topnav-notif-btn">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="notification-counter">40</span>
+                            </span>
+                            <span class="top-nav-btn topnav-mail-btn">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="notification-counter">63</span>
+                            </span>
+                            <span class="top-nav-btn topnav-prof-btn">
+                                B
+                            </span>
+                            <!-- ---------- PROFILE POPUP -------- -->
+                            <div class="profile-popup cst-popup">
+                                <div class="profile-popup-head">
+                                    <h4>BB Collection</h4>
+                                    <p>sampleuser@gmail.com</p>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i> signout </a></li>
+                                </ul>
+                            </div>
+                            <!-- ---------- NOTIFICATION POPUP -------- -->
+                            <div class="notification-popup cst-popup">
+                                <p class="unread-notif">
+                                    You have 20 unread notification(s)
+                                </p>
+                                <ul class="notification-list">
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span>RGS</span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span>RGS</span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span>RGS</span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span>RGS</span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span>RGS</span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                             <!-- ---------- EMAIL POPUP -------- -->
+                             <div class="email-popup cst-popup">
+                                <p class="unread-notif">
+                                    You have 36 unread email(s)
+                                </p>
+                                <ul class="notification-list">
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                            <div>
+                                                <h6>Revision Exchange Rates</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                             
+                        <button class="btn-nav-open">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="centerized-container">
+                            <h3>Track Multiple Parcels</h3>
+                            <p class="shipment-note">To track multiple shipments add shipment numbers seperated by a new line</p>
+                            <form action="">
+                                <label for="">Enter Complete Shipment Number</label>
+                                <textarea name="" cols="50" rows="3">
+
+                                </textarea>
+                                <div class="mt-4">
+                                    <button class="btn btnShipPrimary w-100" type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+
+
+        <footer>
+            <p>Copyright © Logistics. All rights reserved.</p>
+            <span>Designed and Developed by Inshal | Subhan | Arqam</span>
+        </footer>
+    </section>
+
+
+   
+
+
+    <script src="./js/jquery3.6.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
