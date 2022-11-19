@@ -1,14 +1,35 @@
 
+$(document).ready(function(){
+  
+  $(function(){
+    $('#downloadable_table').DataTable( {
+      dom: 'Bfrtip',
+      buttons: [
+          'excel', 'pdf'
+      ]
+  } );
+  });
 
-// $(document).ready(function(){
+    // --------- DATATABLE ----------
+    $(function(){
+      $('#myTable').DataTable();
+    });
+
+    // ---------- TOOLTIP -----------
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
 
 
-//     $('.ribbon-link').on('mouseenter',function(){
-//         $('.ribbon-nav-content').show();
-//     });
+      // -------------SEARCHABLE DDL ------------
 
+      $(function(){
+        $('.searchable-select-box select').selectpicker();
+      });
+
+      
+      
+ 
     
 
-
-// });
-
+});

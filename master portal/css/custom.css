@@ -364,11 +364,12 @@ padding-top: 20px;
 
   .main-nav-item{
     display: inline;
+    font-size: 0.85rem;
+    color: black !important;
   }
   .main-nav-item span{
     display: block;
     text-align: center;
-    font-size: 0.8rem;
   }
   .main-nav-item p{
     display: inline;
@@ -439,7 +440,7 @@ padding-top: 20px;
   .main-content-area{
     background-color: var(--base);
     min-height: 450px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 
   .welcome-ribbon{
@@ -451,3 +452,223 @@ padding-top: 20px;
     font-size: 1.1rem;
     padding: 10px ;
   }
+
+
+  /* ---------------------- CENTERED BOX -------------------- */
+
+
+  .centered-box{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0,0,0,0.4) 0px 10px 10px;
+  }
+
+  .centered-box-title{
+    background-color: var(--dark);
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .centered-box-body{
+    padding: 20px;
+  }
+  .center-box-control
+  {
+    width: 100%;
+    padding: 3px 10px;
+    font-size: 0.9rem;
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  
+  .center-box-control:focus
+  {
+    border-color: var(--secondary);
+  }
+  .center-box-control-ddl
+  {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  .center-box-control-ddl:focus
+  {
+    border-color: var(--secondary);
+  }
+
+  .centered-box-btn{
+    background-color: var(--secondary);
+    color: white;
+    padding: 5px 40px;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .centered-box-btn:hover{
+    background-color: var(--primary);
+  }
+
+  /* ------------------ FULL BOX ------------------ */
+
+  .full-screen-box{
+    margin-bottom: 40px;
+  }
+  .full-screen-box-header{
+    color: var(--primary);
+    padding: 10px;
+    text-align: center;
+  }
+  .full-screen-box-body .dt-button{
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8rem;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+  }
+  .full-screen-box-body .dt-button:hover{
+    background-color: var(--primary) !important;
+    border: none !important;
+    outline: none !important;
+
+  }
+
+
+  /* ------------------- SEARCHABLE SELECT BOX------------- */
+
+  .searchable-select-box .bootstrap-select{
+    
+  }
+  .searchable-select-box select
+  {
+    width: 100%;
+    border: none;
+  }
+  .searchable-select-box select:focus
+  {
+    border: none;
+  }
+  .searchable-select-box button
+  {
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    padding: 3px 10px;
+    width: 100%;
+    margin-top: 10px;
+    outline: none !important;
+  }
+  .searchable-select-box button:hover{
+    background-color: white;
+    border-color: gray;
+  }
+  .searchable-select-box button:focus{
+    border-color: var(--secondary);
+    
+  }
+  .searchable-select-box .bs-searchbox input{
+    font-size: 0.9rem !important;
+    padding: 3px 8px;
+  }
+  .searchable-select-box .bs-searchbox input:focus
+  {
+    border: solid 1px var(--secondary);
+    box-shadow: none;
+  }
+
+  /* ---------------------- CUSTOM TABLE ------------------ */
+
+.custom-table{
+  width: 100%;
+}
+
+.custom-table thead{
+  background-color: var(--dark);
+  color: white;
+}
+.custom-table th{
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.custom-table th::before{
+  content: url('../images/arrow_up.png') !important;
+  color: white !important;
+  opacity: 0.3 !important;
+}
+.custom-table th::after{
+  content: url('../images/arrow_down.png') !important;
+  color: white !important;
+  opacity: 0.3 !important;
+}
+.custom-table tbody tr{
+  border-bottom: solid 1px rgb(209, 209, 209);
+}
+.custom-table tbody tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+.custom-table tbody td
+{
+  padding: 15px 8px;
+  font-size: 0.9rem;
+}
+.tbl-status
+{
+  padding: 3px 10px;
+  color: white;
+  font-size: 0.7rem;
+  display: inline-block;
+  border-radius:100px;
+}
+.tbl-sts-process{
+  background-color: black;
+}
+.tbl-sts-created{
+  background-color: rgb(182, 182, 182);
+}
+.tbl-sts-departed{
+  background-color: rgb(140, 103, 241);
+}
+.tbl-action-btn{
+  background-color: var(--secondary);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.tbl-action-btn:hover
+{
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary);
+}
+.dataTables_length, .dataTables_info{
+  padding-left: 20px;
+}
+.dataTables_filter, .dataTables_paginate 
+{
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+
+  .col-hide{
+    display: none;
+  }
+
+}
+
